@@ -28,14 +28,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  
   }
   
   .image img {
     width: 50vw;
     height: 30vw;
     justify-content: center;
-  
   }
+  
   
   .ps {
     background-color: #fff;
