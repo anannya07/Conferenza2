@@ -4,11 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styledetails.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
     <title>Conference details</title>
 </head>
 <body>
     <div class="hiw"><center><h1>Hover through the conferences here</h1></center></div>
-    
+       <!--Calendar-->
+       <div class="container">
+         <div class="header">
+           <div id="month"></div>
+           <div>
+             <button id="btnBack"><i class="fa fa-angle-left"></i></button>
+             <button id="btnNext"><i class="fa fa-angle-right"></i></button>
+           </div>
+         </div>
+         <div class="weekdays">
+           <div>Sun</div>
+           <div>Mon</div>
+           <div>Tue</div>
+           <div>Wed</div>
+           <div>Thu</div>
+           <div>Fri</div>
+           <div>Sat</div>
+           <div>Sun</div>
+           <div>Mon</div>
+           <div>Tue</div>
+           <div>Wed</div>
+           <div>Thu</div>
+           <div>Fri</div>
+           <div>Sat</div>
+
+
+         </div>
+         <div id="calendar"></div>
+       </div>
+       <div id="modal"></div>
+       <div id="addEvent">
+         <h2>Add Event</h2>
+         <input type="text" id="txtTitle" placeholder="Event Title" />
+         <button id="btnSave">Save</button>
+         <button class="btnClose">Close</button>
+       </div>
+   
+       <div id="viewEvent">
+         <h2>Event</h2>
+         <p id="eventText">This is Sample Event</p>
+         <button id="btnDelete">Delete</button>
+         <button class="btnClose">Close</button>
+       </div>
+   
           <div class="card-grid">
             <div class="card">
               <img src="robot.png" >
@@ -45,7 +89,7 @@
               <img src="cyber.ong.jpeg" >
               <p><b>Conference topic:</b>Cyber security including ML<br>
                  <b>Speaker :</b>Arna Sarkar<br>
-                 <b>Date :</b>08/08/23<br>
+                 <b>Date :</b>11/08/23<br>
               <b>Duration :</b>  6pm-8pm<br>
               <b>Event :</b>Online and in-person</p>
                <center> <button class="btn">Register</button></center>
@@ -54,7 +98,7 @@
                 <img src="devops.png" >
                 <p><b>Conference topic:</b>Cloud computing with devops<br>
                    <b>Speaker :</b>Mr.Samrtha Williams<br>
-                   <b>Date :</b>08/08/23<br>
+                   <b>Date :</b>12/08/23<br>
                 <b>Duration :</b>  6pm-8pm<br>
                 <b>Event :</b>Online and in-person</p>
                  <center> <button class="btn">Register</button></center>
@@ -63,7 +107,7 @@
                 <img src="ml.png" >
                 <p><b>Conference topic:</b>Machine learning deep dive<br>
                    <b>Speaker :</b>Mr.Tarak Das<br>
-                   <b>Date :</b>11/08/23<br>
+                   <b>Date :</b>13/08/23<br>
                 <b>Duration :</b>  6pm-8pm<br>
                 <b>Event :</b>Online and in-person</p>
                  <center> <button class="btn">Register</button></center>
@@ -76,7 +120,7 @@
               <img src="bg.png" >
               <p><b>Conference topic:</b>Big Data with machine learning and AI <br>
                  <b>Speaker :</b>Arna Sarkar<br>
-                 <b>Date :</b>08/08/23<br>
+                 <b>Date :</b>14/08/23<br>
               <b>Duration :</b>  6pm-8pm<br>
               <b>Event :</b>Online and in-person</p>
                <center> <button class="btn">Register</button></center>
@@ -85,7 +129,7 @@
                 <img src="wd.png" >
                 <p><b>Conference topic:</b>Web development<br>
                    <b>Speaker :</b>Mr.Tamaghna Das<br>
-                   <b>Date :</b>08/08/23<br>
+                   <b>Date :</b>25/08/23<br>
                 <b>Duration :</b>  6pm-8pm<br>
                 <b>Event :</b>Online and in-person</p>
                  <center> <button class="btn">Register</button></center>
@@ -94,7 +138,7 @@
                 <img src="aiml.png" >
                 <p><b>Conference topic:</b>Artificial inteligence with machine learning<br>
                    <b>Speaker :</b>Mr.Punit Sarkar<br>
-                   <b>Date :</b>12/08/23<br>
+                   <b>Date :</b>19/08/23<br>
                 <b>Duration :</b>  4pm-6pm<br>
                 <b>Event :</b>Online and in-person</p>
                  <center> <button class="btn">Register</button></center>
@@ -106,7 +150,7 @@
               <img src="cc.png" >
               <p><b>Conference topic:</b>Cloud engineering<br>
                  <b>Speaker :</b>Mr.Tamaghna Das<br>
-                 <b>Date :</b>08/08/23<br>
+                 <b>Date :</b>21/08/23<br>
               <b>Duration :</b>  6pm-8pm<br>
               <b>Event :</b>Online and in-person</p>
                <center> <button class="btn">Register</button></center>
@@ -115,7 +159,7 @@
                 <img src="mlsc.png" >
                 <p><b>Conference topic:</b>Cyber Security with Machine Learning 2<br>
                    <b>Speaker :</b>Mr.Shoron Thakur<br>
-                   <b>Date :</b>08/08/23<br>
+                   <b>Date :</b>23/08/23<br>
                 <b>Duration :</b>  6pm-8pm<br>
                 <b>Event :</b>Online and in-person</p>
                  <center> <button class="btn">Register</button></center>
@@ -124,7 +168,7 @@
                 <img src="ad.png" >
                 <p><b>Conference topic:</b>Android development<br>
                    <b>Speaker :</b>Mr.Aditya Roy<br>
-                   <b>Date :</b>11/08/23<br>
+                   <b>Date :</b>28/08/23<br>
                 <b>Duration :</b>  6pm-8pm<br>
                 <b>Event :</b>Online and in-person</p>
                  <center> <button class="btn">Register</button></center>
@@ -136,7 +180,7 @@
             <p>&copy;conferenza2023.com</p>
           </div>
          
-
+      <script src="calendar.js"> </script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"> </script>
       <script>
         AOS.init();

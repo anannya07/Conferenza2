@@ -6,14 +6,13 @@
   
   .Mainheading {
     font-size: 60px;
-    color:#252a27b4;
+    color:#59f0f0b4;
     margin-left: 0px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
-  .mainimage img{
-      width:850px;
-      height:450px;
-     
+  body{
+    max-width: fit-content;
+    overflow-x:hidden;
   }
   
   
@@ -21,8 +20,8 @@
   .image-slideshow {
     margin-left: 0px;
     width: 100%;
-    position: fixed;
-  
+    position: relative;
+    box-shadow: 0px 20px 20px black;
     background: url("imgslide2.png") center/cover;
     height: 600px;
     display: flex;
@@ -95,14 +94,18 @@
     /* background-color: #4C4B16; */
     /* background-color: #395144; */
     /* background-color: #224B0C; */
-    background-color: #000000;
-   
+    background: url("body.png") no-repeat center  fixed;
+   /* background: url("ml.png") no-repeat center  fixed;
+    background: url("wd.png") no-repeat center  fixed;
+    background: url("ad.png") no-repeat center  fixed;*/
+    position:relative;
+    
   }
   
   
   .container {
     position: relative;
-    width: fit-content;
+    width: 100%;
   }
   
   img{
@@ -134,13 +137,14 @@
     display: flex;
     justify-content: space-evenly ;
     flex-wrap: wrap;
-    background-color: rgb(255, 255, 255,0.5);
+    background-color: rgba(225, 217, 217, 0.5);
    
     padding:0px ;
     word-spacing: 10%;
     right:0;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size:30px;
+    width: 1440px;
   }
   
   
@@ -148,8 +152,13 @@
   
   nav a {
     font-size: 18px;
-    color: #3d1017;
+    color: #0b0b0b;
     text-decoration-line: none;
+  }
+  nav a :hover{
+      box-shadow: 0px 8px 30px #ffffff;
+      background-color: #890e0e;
+      padding: 20px;
   }
   
   .container {
@@ -190,7 +199,12 @@
   
   
   }
-  
+  @media screen and (max-width:600px){
+    h1{
+      font-size: 36px;
+      line-height: 50px;
+    }
+  }
   .landingtext h2 {
     margin: 6px !important;
     font-size: 25px;
@@ -258,7 +272,7 @@
   
   
     font-size: 50px;
-    color: rgb(255, 255, 255);
+    color: rgb(163, 190, 52);
   }
   
   
@@ -401,65 +415,8 @@
   
   /* ------------------------------------------------- */
   
-  #plans-and-pricing {
-    font-size: 50px;
-  }
+ 
   
-  .plans {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  
-  .pr {
-    background-color: #0d0d0d9e;
-    width: 510px;
-    height: 500px;
-    font-size: 20px;
-    border-radius: 20px;
-    margin-top:20px;
-    margin-bottom:20px;
-    transform: ease-in 0.2s;
-  }
-  
-  .gold{
-    margin: 20px;
-    font-size: 33px;
-    color: #F1C93B;
-    text-align-last: center;
-  }
-  
-  .silver{
-    margin: 20px;
-    font-size: 33px;
-    color: #cacaca;
-    text-align-last: center;
-  }
-  
-  .pricing1, .pricing2{
-    text-align: center;
-    font-size: 40px;
-    font-weight: bold;
-    border-radius: 20px;
-  }
-  
-  .pricing1{
-    border: 2px solid #cacaca;
-    background-color: #cacaca68;
-  }
-  
-  .pricing2 {
-    border: 2px solid #F1C93B;
-    background-color: #f1ca3b63;
-  
-  }
-  
-  .pr li {
-    padding: 5px 10px 5px 10px;
-    margin: 30px 5px 30px 5px;
-  }
   
   .btn1, .btn2 {
     text-align: center;
