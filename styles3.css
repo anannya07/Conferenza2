@@ -7,7 +7,7 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: #f0f0f0;
-    background: url("details1.png") no-repeat fixed;
+    background: url("details1.png") no-repeat center/cover fixed;
  
   }
   body h1{

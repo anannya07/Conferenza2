@@ -25,6 +25,13 @@
     color:#ffffff;
     font-size: larger;
   }
+  #back-button{
+    background-color: #2ed573;
+    width: 100px;
+    height:40px;
+    color:#000;
+    font-size: 15px;
+  }
   
   h2 {
     margin-top: 0;
@@ -80,7 +87,6 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-color: #ff5252;
   display: grid;
   place-items: center;
 }
